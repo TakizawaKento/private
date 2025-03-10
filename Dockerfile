@@ -10,7 +10,7 @@ RUN apt-get update && \
 	pip install --upgrade pip && \
 	pip install torch torchvision scipy numpy pandas matplotlib seaborn jupyterlab scikit-learn thop albumentations opencv-python imgaug torchtext nltk gensim portalocker && \
 	rm -rf ~/.cache/pip
-
+RUN apt-get install -y git
 WORKDIR /
 RUN mkdir /work
 
